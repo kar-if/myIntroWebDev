@@ -4,9 +4,11 @@
 p {
     background-color: yellow;
 }
+
 h2 {
     text-transform: uppercase;
 }
+
 h4 {
     text-transform: lowercase;
 }
@@ -30,6 +32,54 @@ h2, #chapter {
     text-transform: uppercase;
 }
 
-h1,h2, .center{
+h1,
+h2,
+.center {
     text-align: center;
+}
+
+/* Styles for Page 3 */
+.days {
+  list-style-position: inside;
+}
+
+.days li {
+    text-transform: uppercase;
+    color: #A0A;
+    font-size: 1.4em;
+}
+
+.flavors {
+  list-style-type: circle;
+}
+
+.flavors li {
+    font-size: 1.2em;
+    text-transform: lowercase;
+}
+
+/* Styles for Navigations */
+.nav-h,
+.nav-v{
+    list-style-type: none;
+    margin: 0;
+    padding: 5;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-h li {
+    float: left;
+}
+
+.nav-v {
+    width: 200px;
 }
