@@ -83,3 +83,65 @@ li a {
 .nav-v {
     width: 200px;
 }
+
+.active {
+    background-color: #04aa6d;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+/* Styles for Page 5 */
+#handling-div { 
+    background-color: #17255a;
+}
+
+#handling-h1 {
+    background-color: #7c9885;
+}
+
+#handling-p {
+    display: block;
+    background-color: #5e0b15;
+}
+
+#handling-a {
+    display: block;
+    background-color: #fde74c;
+}
+
+.box-model, 
+.box-model2 {
+    width: 400px;
+    height: 120px;
+    padding: 20px;
+}
+
+.box-model {
+    border: 10px solid red;
+    margin: 0 0 20px 0;
+}
+
+.box-model2 {
+    border: 10px solid blue;
+    box-sizing: border-box; 
+}
+
+.position-example {
+    background-color: green;
+    height: 150px;
+}
+
+.position-a {
+    position: absolute;
+    display: inline;
+    background-color: orange;
+}
+
+.position-r {
+    position: relative;
+    display: inline;
+    background-color: #fff;
+    color: #000;
+}
