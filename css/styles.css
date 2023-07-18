@@ -1,6 +1,10 @@
 :root{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --primary: #8367A2; 
+    --secondary: #44355B; 
+    --accent: #221E22; 
 }
+
 p {
     background-color: yellow;
 }
@@ -155,4 +159,38 @@ li a:hover {
 .span-p span {
     font-weight: bold;
     color: blue;
+}
+
+/* Styles for page 6 */
+.custom-bg {
+    background-color: var(--primary);
+}
+
+.custom-t {
+    color: var(--accent);
+}
+.custom-p {
+    color: var(--secondary);
+}
+
+.background-solid {
+    background: var(--primary);
+    height: 200px
+}
+
+.background-repeat {
+    background-image: url(https://i.ibb.co/m6thC3B/dog-image7.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.background-gradient {
+    background-image: linear-gradient(to right, rgb(90%,30%,50%,.9), 
+    rgba(0, 0, 0, 0)),
+    url(https://i.ibb.co/wr0ScTX/dog-image8.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    height: 400px;
+    border: solid red;
 }
