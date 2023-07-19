@@ -194,3 +194,125 @@ li a:hover {
     height: 400px;
     border: solid red;
 }
+
+/* Styles for Page 7 */
+.container {
+    display: grid;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.container-2 {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px;
+}
+
+.container p {
+    background-color: lightgreen;
+    border: 2px solid green;
+    margin: 0;
+    width: 200px;
+    height: 25px;
+}
+
+.container-2 p {
+    background-color: lightgreen;
+    border: 2px solid green;
+    margin: 0;
+}
+
+.container-a {
+    display: grid;
+    text-align: center;
+    grid-template-rows: 50px;
+    grid-template-columns: 300px 4fr 1fr;
+    gap: 5px;
+}
+
+.container-a p {
+    background-color: lightgreen;
+}
+
+.wrapper {
+    display: grid;
+    background-color: lightblue;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 2px;
+    text-align: center;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    border: 2px solid blue;
+}
+
+.item2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border: 2px solid red;
+}
+
+.item3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border: 2px solid rgb(38, 232, 239);
+}
+
+.item4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border: 2px solid rgb(249, 5, 151);
+}
+
+/* Grid layout for page 2 */
+.container-div {
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav nav" 
+    "left main main right" 
+    "left main main right" 
+    "foot foot foot foot";
+}
+
+.contain-left {
+    grid-area: left;
+}
+
+.contain-right {
+    grid-area: right;
+}
+
+.contain-right, 
+.contain-left {
+    background-color: gray;
+}
+
+.contain-nav {
+    grid-area: nav;
+}
+
+.contain-bottom {
+    grid-area: foot;
+}
+
+.contain-nav, 
+.contain-bottom {
+    background-color: green;
+}
+
+.contain-center {
+    grid-area: main;
+    background-color: lightskyblue;
+}
