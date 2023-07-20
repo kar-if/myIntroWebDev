@@ -316,3 +316,65 @@ li a:hover {
     grid-area: main;
     background-color: lightskyblue;
 }
+
+/* Styles for Semantic Page */
+.wrapper-semantic {
+    display: grid;
+    grid-template-areas:
+      "head head head head"
+      "nav nav nav nav"
+      "left main main right"
+      "left main main right"
+      "foot foot foot foot";
+}
+  
+.semantic-nav {
+    grid-area: nav;
+}
+  
+.sematic-head {
+    grid-area: head;
+    margin: 16px;
+}
+  
+.nav-semantic-left {
+    grid-area: left;
+}
+  
+.nav-semantic-right {
+    grid-area: right;
+    width: 200px;
+    background-color: #333;
+    height: 100%;
+}
+  
+.main-semantic {
+    display: grid;
+    grid-template-areas:
+      "main-lt main-rt"
+      "art art";
+    grid-area: main;
+    margin-left: 16px;
+}
+  
+.main-semantic-left {
+    grid-area: main-lt;
+}
+  
+.main-semantic-right {
+    grid-area: main-rt;
+}
+  
+.semantic-article {
+    grid-area: art;
+}
+  
+.semantic-footer {
+    grid-area: foot;
+    text-align: center;
+    margin-top: 16px;
+}
+  
+.semantic-footer p {
+    display: inline;
+}
