@@ -378,3 +378,60 @@ li a:hover {
 .semantic-footer p {
     display: inline;
 }
+
+/* Mobile Version */
+@media screen and (max-width: 600px){
+    .container-div{
+        grid-template-areas: 
+         "nav"
+         "left"
+         "main"
+         "right"
+         "foot";
+    }
+}
+
+@media screen and (max-width: 600px){
+.wrapper-semantic{
+grid-template-areas: 
+    "head"
+    "nav"
+    "left"
+    "main"
+    "right"
+    "foot";
+    }
+
+
+.semantic-nav {
+  display: none;
+    }
+
+.main-semantic {
+    grid-template-areas: "main-lt"
+    "main-rt"
+    "art";
+    }
+
+.nav-v {
+    width: 100%;
+    }
+
+    .semantic-head h1{
+        background-color: red;
+    }
+}
+
+/* Styles for page 8 */
+.basic-form{
+    margin: 32px 0;
+}
+
+#fname {
+    background-color: #c5e3f6;
+    border: 2px solid #555;
+}
+
+#fname:focus{
+    border: 4px solid #555
+}
