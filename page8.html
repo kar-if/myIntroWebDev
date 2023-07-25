@@ -10,7 +10,7 @@
     <form name="basic" class="basic-form">
       <label for="fname">Username:</label><br />
       <input type="text" id="fname" name="username" /><br />
-      
+
       <label for="pwd">Password:</label><br />
       <input type="password" name="pwd" id="pwd" /><br /><br />
     </form>
@@ -18,14 +18,54 @@
     <!-- Radio Buttons -->
     <form action="basic" class="basic-form">
       <div class="more-form">
-        <input type="radio" id="a" name="movie" value="action">
+        <input type="radio" id="a" name="movie" value="action" />
         <label for="a">Action</label>
-        <br>
-        <input type="radio" id="b" name="movie" value="comedy">
+        <br />
+        <input type="radio" id="b" name="movie" value="comedy" />
         <label for="b">Comedy</label>
-        <br>
-        <input type="radio" id="c" name="movie" value="drama">
-        <label for="c">Drama</label>
+        <br />
+        <input type="radio" id="c" name="movie" value="drama" />
+        <label for="c">Drama</label><br /><br />
+
+        <!-- Check Boxes -->
+        <form action="basic" class="basic-form">
+          <div class="more-form">
+            <input type="checkbox" id="mon" name="dow" value="Monday" />
+            <label for="mon">Monday</label><br />
+
+            <input type="checkbox" id="tue" name="dow" value="Tuesday" />
+            <label for="tue">Tuesday</label><br />
+
+            <input type="checkbox" id="wed" name="dow" value="Wednesday" />
+            <label for="wed">Wednesday</label><br />
+
+            <input type="checkbox" id="thu" name="dow" value="Thursday" />
+            <label for="thu">Thursday</label><br />
+
+            <input type="checkbox" id="fri" name="dow" value="Friday" />
+            <label for="fri">Friday</label><br />
+
+            <input type="checkbox" id="sat" name="dow" value="Saturday" />
+            <label for="sat">Saturday</label><br />
+
+            <input type="checkbox" id="sub" name="dow" value="Sunday" />
+            <label for="sun">Sunday</label>
+          </div>
+        </form>
+      </div>
+    </form>
+
+    <!-- Select form -->
+    <form action="basic" class="basic-form">
+      <div class="more-form">
+        <label for="favcolot">Choose a favorite color</label>
+        <select name="favcolor" id="favcolor">
+          <option disabled selected value>-- Choose a color --</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="orange">Orange</option>
+          <option value="yellow">Yellow</option>
+        </select>
       </div>
     </form>
   </body>
