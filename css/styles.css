@@ -435,3 +435,13 @@ grid-template-areas:
 #fname:focus{
     border: 4px solid #555
 }
+
+.basic-form,
+.morm-form {
+    margin: 32px 0;
+}
+
+#favcolor {
+    width: 200px;
+    text-align: center;
+}
