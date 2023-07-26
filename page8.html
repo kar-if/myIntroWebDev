@@ -68,5 +68,26 @@
         </select>
       </div>
     </form>
+
+    <button type="button" onclick="alert('Hello there!')">Hello</button>
+
+    <div class="out-form">
+      <h1 id="out-name"></h1>
+      <p id="out-movie"></p>
+      <p id="out-color"></p>
+    </div>
+    <button type="button" onclick="result()">Submit</button>
   </body>
+
+  <script>
+    function result() {
+      let name = document.getElementById("fname").value;
+      let movie = document.forms.basic.movie.value;
+      let color = document.forms.basic.favcolor.value;
+
+      document.getElementById("out-name").innerHTML = name;
+      document.getElementById("out-movie").innerHTML = movie;
+      document.getElementById("out-color").innerHTML = color;
+    }
+  </script>
 </html>

@@ -445,3 +445,22 @@ grid-template-areas:
     width: 200px;
     text-align: center;
 }
+
+.out-form {
+    margin: 32px;
+}
+
+#out-name{
+    color: #009;
+}
+
+#out-movie, 
+#out-name, 
+#out-color{
+    margin-left: 16px;
+}
+
+#out-movie, 
+#out-color{
+    font-size: 1.2em;
+}
