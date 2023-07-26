@@ -82,8 +82,8 @@
   <script>
     function result() {
       let name = document.getElementById("fname").value;
-      let movie = document.forms.basic.movie.value;
-      let color = document.forms.basic.favcolor.value;
+      let movie = document.querySelector('input[name="movie"]:checked').value;
+      let color = document.querySelector('#colors').value;
 
       document.getElementById("out-name").innerHTML = name;
       document.getElementById("out-movie").innerHTML = movie;
